@@ -1,0 +1,10 @@
+{
+    "files.autoSave": "onWindowChange",
+    "files.associations": {
+    "*.cpp": "cpp"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.defaultProfile.osx": "fish"
+}
+  

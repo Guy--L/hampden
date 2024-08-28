@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C++: Launch Word Program",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/word/word",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/word",
+      "environment": [],
+      "externalConsole": true,  // Set this to true to use an external console (iTerm2)
+      "MIMode": "lldb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for lldb",
+          "text": "settings set target.pretty-printing true",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build-word"
+    },
+    {
+      "name": "C++: Launch Tower Program",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/tower/tower",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/tower",
+      "environment": [],
+      "externalConsole": true,  // Set this to true to use an external console (iTerm2)
+      "MIMode": "lldb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for lldb",
+          "text": "settings set target.pretty-printing true",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build-tower"
+    }
+  ]
+}

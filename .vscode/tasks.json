@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-word",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++11",  // Use C++11 standard
+        "-g",
+        "word/main.cpp",  // Relative path to main.cpp in the word directory
+        "-o",
+        "word/word"  // Output executable in the word directory
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build-tower",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++11",  // Use C++11 standard
+        "-g",
+        "tower/main.cpp",  // Relative path to main.cpp in the tower directory
+        "-o",
+        "tower/tower"  // Output executable in the tower directory
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
