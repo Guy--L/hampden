@@ -7,7 +7,7 @@ struct Person {
     int weight;
 };
 
-// Comparator to sort people by height and then by descending weight
+// Comparator to sort people by height ascending and weight descending
 bool compare(const Person &a, const Person &b) {
     if (a.height == b.height) {
         return a.weight > b.weight;  // Sort by descending weight for the same height
@@ -74,6 +74,10 @@ void runTests() {
     // Test case 7: Mixed heights and weights
     std::vector<Person> people7 = {{65, 100}, {70, 110}, {56, 95}, {75, 105}, {60, 85}, {68, 90}};
     std::cout << "Test 7 - Expected: 3, Got: " << largestTower(people7) << std::endl;
+    
+    // Test case 8: People with the same height but different weights
+    std::vector<Person> people8 = {{65, 100}, {65, 90}, {70, 110}, {70, 95}, {75, 120}};
+    std::cout << "Test 8 - Expected: 3, Got: " << largestTower(people8) << std::endl;
 }
 
 int main() {
